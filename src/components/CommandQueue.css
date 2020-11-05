@@ -1,0 +1,11 @@
+.CommandQueue{
+}
+.CommandQueue .container{
+    max-height: 100vh;
+    overflow: scroll;
+    text-align: left;
+}
+.CommandQueue .container .command .index{
+    display: inline-block;
+    min-width: 66px;
+}

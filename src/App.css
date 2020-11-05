@@ -2,37 +2,53 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.App > .container {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 18px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App > .container > .board{
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App > .container > .commandQueue{
+  padding: 32px;
+  width: 300px;
+}
+
+.App > .container > .controls{
+  width: 400px;
+  padding: 32px;
+  text-align: left;
+}
+
+.App > .container > .controls .row{
+  display: flex;
+  justify-content: center;
+}
+
+.App > .container > .controls button{
+  padding: 8px;
+  margin: 4px 0;
+  min-width: 66px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.App > .container > .controls button:hover{
+  cursor: pointer;
+  background: rgba(255,255,255,0.2);
+}
+
+.App > .container > .controls button.submit{
+  width: 200px;
+  font-weight: bold;
+  background: white;
+  color: #282c34;
 }
